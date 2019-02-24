@@ -97,46 +97,46 @@ textarea {
 /* ------ GLOBAL STYLES ------ */
  
 html {
-	font-size: 16px;
+  font-size: 16px;
 }
  
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
-	text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
 }
  
 ul, 
 ol {
-	list-style-type: none;
+  list-style-type: none;
 }
  
 a {
-	color: #e2e3ed;
-    text-decoration: none;
+  color: #e2e3ed;
+  text-decoration: none;
 }
 
 h1 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 2.25em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
 }
  
 h2 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.875em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
 }
  
 h3, 
 h4 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.25em;
-	margin: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25em;
+  margin: 20px 0;
 }
  
 p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.875em;	
-	line-height: 1.285;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875em;	
+  line-height: 1.285;
 }
  
 img {
@@ -148,7 +148,7 @@ figure {
 }
  
 address {
-	font-style: normal;
+  font-style: normal;
 }
  
 .content-wrapper {
@@ -243,13 +243,43 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+}
+
 /* ASIDE */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* FEATURES */
@@ -277,12 +307,14 @@ aside {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
 /* REVIEWS */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -290,6 +322,7 @@ aside {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -300,6 +333,7 @@ aside {
 /* ------ ABOUT PAGE ------ */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,6 +341,7 @@ aside {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,6 +355,7 @@ aside {
 /* ------ FAQ PAGE ------ */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,10 +372,16 @@ aside {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+  font-weight: 700;
 }
 
  /* ==========================================================================
