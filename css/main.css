@@ -94,10 +94,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ------ MOBILE FIRST STYLES ------ */
+
+/* GENERAL */
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
+
+/* HEADER AND FOOTER */
 
 header,
 footer {
@@ -172,9 +178,9 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/* -------------------- Mobile - Home -------------------- */
+/* ------ HOME PAGE ------ */
 
-/* Hero Area */
+/* HERO */
 
 .hero-area {
   display: flex;
@@ -182,7 +188,7 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
-/* Aside */
+/* ASIDE */
 
 aside {
   display: flex;
@@ -191,7 +197,7 @@ aside {
   flex-flow: row wrap;
 }
 
-/* Features */
+/* FEATURES */
 
 .features {
   display: flex;
@@ -219,7 +225,7 @@ aside {
   margin: 0;
 }
 
-/* Reviews */
+/* REVIEWS */
 
 .reviews {
   display: flex;
@@ -236,7 +242,7 @@ aside {
   margin: 20px 0;
 }
 
-/* -------------------- Mobile - About -------------------- */
+/* ------ ABOUT PAGE ------ */
 
 .mission {
   display: flex;
@@ -256,7 +262,7 @@ aside {
   margin: 0;
 }
 
-/* -------------------- Mobile - FAQ -------------------- */
+/* ------ FAQ PAGE ------ */
 
 .faq {
   display: flex;
@@ -368,8 +374,139 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/* ------ TABLET STYLES ------ */
+
+@media only screen and (min-width: 768px) {
+    
+    /* GENERAL */
+
+    .content-wrapper {
+      max-width: 640px;
+      margin: 100px 0;
+    }
+  
+    /* HEADER AND FOOTER */
+
+    header {
+      justify-content: space-around;
+    }
+  
+    header .content-wrapper {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    header nav {
+      width: 20%;
+    }
+  
+    header nav ul {
+      justify-content: space-between;
+    }
+  
+    .header-divider {
+      display: none;
+    }
+
+    footer .content-wrapper {
+      width: 65%;
+      margin: 100px 0;
+    }
+  
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    footer .contact {
+      margin-bottom: 0;
+    }
+  
+    footer .copyright {
+      width: 100%;
+    }
+  
+    /* ASIDE */
+
+    aside .content-wrapper {
+      margin: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
+  
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 35%;
+      margin: 0;
+    }
+  
+    /* FEATURES */
+    .features article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      flex-basis: 50%;
+    }
+    
+    .features .features-item-description {
+      width: 50%;
+    }
+  
+    /* REVIEWS */
+
+    .reviews article {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .reviews article div {
+      width: 49%;
+    }
+
+    /* ------ ABOUT PAGE ------ */
+
+    .mission-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .mission-content p {
+      width: 40%;
+    }
+  
+    .contact-section .content-wrapper h2 {
+      width: 80%;
+    }
+  
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    /* ------ FAQ PAGE ------ */
+
+    .faq .content-wrapper {
+      justify-content: space-between;
+    }
+  
+    .faq-content {
+      flex-basis: 40%;
+    }
+  
+    .faq h2 {
+      width: 100%;
+    }
+}
+
+/* ------ DESKTOP STYLES ------ */
+
+@media only screen and (min-width: 1200px) {
+
 }
 
 @media print,
