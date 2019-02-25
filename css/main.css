@@ -369,7 +369,7 @@ input[type=button] {
     height: 0; 
     position: relative;
     overflow: hidden;
-    padding-bottom: 75%; 
+    padding-bottom: 80%; 
 }
  
 .map iframe {
@@ -614,6 +614,10 @@ input[type=button] {
     .mission-content p {
       width: 40%;
     }
+
+    .map figure {
+    padding-bottom: 45.5%;
+  }
   
     .contact-section .content-wrapper h2 {
       width: 80%;
@@ -624,6 +628,10 @@ input[type=button] {
       justify-content: space-between;
       align-items: flex-start;
     }
+
+    .contact-content h4 {
+    font-size: 1.5em;
+  }
 
     /* ------ FAQ PAGE ------ */
 
@@ -688,10 +696,19 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 100%;
+      font-size: 3em;
+  }
+
+  .map figure {
+    padding-bottom: 37.5%;
   }
 
   .contact-section .content-wrapper h2 {
     margin-bottom: 40px;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /* ------ FAQ PAGE ------ */
